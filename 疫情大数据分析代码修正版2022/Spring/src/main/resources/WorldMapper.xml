@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.WorldMapper">
+
+    <select id="findAll" resultType="com.demo.entity.World" >
+        select world_name,world_confirm,world_heal,world_dead,world_date from data_world where world_date>'2021-05-01' order by world_date desc
+    </select>
+
+
+</mapper>
